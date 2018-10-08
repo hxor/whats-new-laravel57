@@ -1,0 +1,17 @@
+#Model User ada Penambahan: MustVerifyEmail Contracts yang berisi 3 method
+
+#Jika kita implements ke User class, di balik proses tersebut terdapat pengiriman email ketika user melakukan registrasi.
+
+#Di dalam migration users tedapat colom email_verified_at dengan timestamp
+
+#Ubah mail server -> log. Buat Auth -> Coba register.
+
+#Tambahkan ['verify' => true] dalam Auth::routes()
+
+
+#Gunakan Middleware 'verified' untuk mencegah user masuk ke dalam sistem
+
+
+##How It Works!
+
+1. Check di EventServiceProvider terdapat listener dengan SendEmailVerificationNotification::class -> SendEmailVerificationNotification -> VerifyEmail;
