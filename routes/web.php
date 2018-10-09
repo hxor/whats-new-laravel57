@@ -12,7 +12,24 @@
 */
 
 Route::get('/', function () {
+
+    // dump('Hello World');
+
+    dd("hello world");
+
     return view('welcome');
+});
+
+Route::get('/users', function () {
+    $user = App\User::all();
+
+    dump($user->toArray());
+
+    return view('welcome');
+});
+
+Route::post('/post', function () {
+    dump(request()->all());
 });
 
 Auth::routes(['verify' => true]);

@@ -1,0 +1,5 @@
+- Dalam artisan ada perintah baru: dump-server
+- Berfungsi untuk menampung hasil "var-dump" debugging dan lebih bersih tanpa menampilkan pada browser
+- Terdapat pada dev-package "beyondcode/laravel-dump-server": "^1.0"
+
+- Jika kita tidak mennajalankan perintah dump-server, maka akan muncul di browser. Sebaliknya
